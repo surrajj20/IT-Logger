@@ -6,6 +6,8 @@ import AddLogModel from './components/logs/AddLogModal';
 import EditLogModel from './components/logs/EditLogModel';
 import AddTechModel from './components/techs/AddTechModal';
 import TechListModal from './components/techs/TechListModal';
+import { Provider } from 'react-redux';
+import store from './store';
 
 
 
@@ -19,17 +21,19 @@ const App = () => {
     M.AutoInit();
   })
   return (
-    <Fragment>
-      <SearchBar />
-      <div className='container'>
-        <AddBtn />
-        <AddLogModel />
-        <EditLogModel />
-        <AddTechModel />
-        <TechListModal />
-        <Logs />
-      </div>
-    </Fragment>
+    <Provider store={store}>
+      <Fragment>
+        <SearchBar />
+        <div className='container'>
+          <AddBtn />
+          <AddLogModel />
+          <EditLogModel />
+          <AddTechModel />
+          <TechListModal />
+          <Logs />
+        </div>
+      </Fragment>
+    </Provider>
   );
 };
 
