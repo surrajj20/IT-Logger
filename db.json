@@ -1,25 +1,25 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed hard drive on workstation 005",
-      "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sam Smith"
-    },
-    {
-      "id": 2,
-      "message": "Workstation 007 not posting",
+      "message": "Change network card in service 007",
       "attention": true,
-      "date": "03-02-2019",
-      "tech": "John Doe"
+      "tech": "John Deo",
+      "date": "2020-03-05T06:44:17.796Z",
+      "id": 1
     },
     {
-      "id": 3,
-      "message": "Changed memory on workstation 050",
+      "message": "Hard drive failed in 007",
       "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sara Wilson"
+      "tech": "Sam Smith",
+      "date": "2020-03-05T06:45:00.400Z",
+      "id": 2
+    },
+    {
+      "message": "1122 Wireless down",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2020-03-05T06:45:41.234Z",
+      "id": 3
     }
   ],
   "techs": [
